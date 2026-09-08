@@ -1,0 +1,59 @@
+
+import rclpy
+from rclpy.node import Node
+from rclpy.action import ActionClient
+from rclpy.action.client import ClientGoalHandle
+from std_srvs.srv import SetBool
+from pid_interfaces.action import yaw_pid 
+class yawClient(Node):
+    def __init__(self):
+       
+        super().__init__('yaw_client')
+
+        self._action_client = ActionClient(self, yaw_pid, 'target_yaw')
+
+    def send_goal(self, angle_rad):
+        
+        self._action_client.wait_for_server()
+        goal_msg = yaw_pid.Goal()
+        goal_msg.target_yaw =  angle_rad 
+        # Log the goal message being sent
+        self.get_logger().info(f'Sending goal: target_yaw={goal_msg.target_yaw}')
+
+       
+        self._send_goal_future = self._action_client.send_goal_async(
+            goal_msg, feedback_callback=self.feedback_callback)
+        
+        
+        self._send_goal_future.add_done_callback(self.goal_response_callback)
+
+    def goal_response_callback(self, future):
+       
+        self.goal_handle: ClientGoalHandle = future.result()  
+        if self.goal_handle.accepted:
+           
+            self.get_logger().info('Goal accepted :)')
+            self.goal_handle.get_result_async().add_done_callback(self.get_result_callback)
+        else:
+          
+            self.get_logger().info('Goal rejected :(')
+
+    def get_result_callback(self, future):
+        # Callback function to handle the final result of the goal execution
+        result = future.result().result  # Get the result of the goal
+        self.get_logger().info("Result " + str(result.success))  # Log the result of the goal execution
+        self.get_logger().info('Reached Goal :)')
+    def feedback_callback(self, feedback_msg):
+        # Callback function to handle feedback messages during goal execution
+        current_yaw = feedback_msg.feedback.current_yaw  # Get the current yaw from feedback
+        # Log the received feedback
+        self.get_logger().info(f"Feedback received - Current Yaw: {current_yaw}")
+
+def main(args=None):
+    rclpy.init(args=args)
+    client = yawClient()
+    angle_rad = float(input("Enter the desired yaw angle in radians: "))
+    client.send_goal(angle_rad)
+    rclpy.spin(client)
+if __name__ == '__main__':
+    main()
