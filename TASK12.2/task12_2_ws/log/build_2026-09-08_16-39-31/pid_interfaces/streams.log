@@ -1,0 +1,42 @@
+[0.221s] Invoking command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/masa/TASK_12.2/TASK12.2/task12_2_ws/pid_interfaces -DCMAKE_INSTALL_PREFIX=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces
+[0.467s] -- The C compiler identification is GNU 13.3.0
+[0.616s] -- The CXX compiler identification is GNU 13.3.0
+[0.645s] -- Detecting C compiler ABI info
+[0.764s] -- Detecting C compiler ABI info - done
+[0.784s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.785s] -- Detecting C compile features
+[0.786s] -- Detecting C compile features - done
+[0.803s] -- Detecting CXX compiler ABI info
+[0.921s] -- Detecting CXX compiler ABI info - done
+[0.934s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.934s] -- Detecting CXX compile features
+[0.935s] -- Detecting CXX compile features - done
+[0.962s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.180s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.375s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.530s] -- Added test 'lint_cmake' to check CMake code style
+[1.533s] -- Added test 'xmllint' to check XML markup files
+[1.537s] -- Configuring done (1.3s)
+[1.540s] -- Generating done (0.0s)
+[1.543s] -- Build files have been written to: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces
+[1.549s] Invoked command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/masa/TASK_12.2/TASK12.2/task12_2_ws/pid_interfaces -DCMAKE_INSTALL_PREFIX=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces
+[1.551s] Invoking command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces -- -j8 -l8
+[1.595s] Invoked command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces -- -j8 -l8
+[1.608s] Invoking command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces
+[1.617s] -- Install configuration: ""
+[1.617s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/ament_index/resource_index/package_run_dependencies/pid_interfaces
+[1.617s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/ament_index/resource_index/parent_prefix_path/pid_interfaces
+[1.617s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/ament_prefix_path.sh
+[1.617s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/ament_prefix_path.dsv
+[1.617s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/path.sh
+[1.618s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/path.dsv
+[1.618s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.bash
+[1.618s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.sh
+[1.618s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.zsh
+[1.618s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.dsv
+[1.618s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/package.dsv
+[1.618s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/ament_index/resource_index/packages/pid_interfaces
+[1.619s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/cmake/pid_interfacesConfig.cmake
+[1.619s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/cmake/pid_interfacesConfig-version.cmake
+[1.619s] -- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/package.xml
+[1.621s] Invoked command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces

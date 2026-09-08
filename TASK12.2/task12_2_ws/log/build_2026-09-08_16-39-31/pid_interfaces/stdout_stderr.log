@@ -1,0 +1,36 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces
+-- Install configuration: ""
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/ament_index/resource_index/package_run_dependencies/pid_interfaces
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/ament_index/resource_index/parent_prefix_path/pid_interfaces
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/ament_prefix_path.dsv
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/path.sh
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/environment/path.dsv
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.bash
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.sh
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.zsh
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/local_setup.dsv
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/package.dsv
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/ament_index/resource_index/packages/pid_interfaces
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/cmake/pid_interfacesConfig.cmake
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/cmake/pid_interfacesConfig-version.cmake
+-- Installing: /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/share/pid_interfaces/package.xml
