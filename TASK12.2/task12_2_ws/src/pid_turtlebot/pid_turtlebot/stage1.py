@@ -1,0 +1,136 @@
+import asyncio
+import math
+
+from rclpy.node import Node
+from rclpy.action import ActionClient
+from std_srvs.srv import SetBool
+
+from turtlebot_interface.action import MoveX, MoveYaw
+
+
+GATE_OPEN_S = 2.0
+
+
+class Stage1:
+
+    def __init__(self, node: Node, gate_client):
+
+        self.node = node
+        self.gate_client = gate_client
+
+        # Action servers
+        self.move_yaw_client = ActionClient(
+            node,
+            MoveYaw,
+            'move_yaw'
+        )
+
+        self.move_x_client = ActionClient(
+            node,
+            MoveX,
+            'move_x'
+        )
+
+    async def run(self) -> bool:
+
+        if not await self._call_gate(True):
+            self.node.get_logger().error(
+                "Stage 1: gate service call failed"
+            )
+            return False
+
+        if not await self._send_yaw(math.radians(90)):
+            self.node.get_logger().error(
+                "Stage 1: yaw +90 failed"
+            )
+            return False
+
+        if not await self._send_x(0.30):
+            self.node.get_logger().error(
+                "Stage 1: approach movement failed"
+            )
+            return False
+
+        await asyncio.sleep(GATE_OPEN_S)
+
+        if not await self._send_x(0.45):
+            self.node.get_logger().error(
+                "Stage 1: crossing movement failed"
+            )
+            return False
+
+        self.node.get_logger().info(
+            "Stage 1 complete, y ~= 1.25"
+        )
+
+        return True
+
+    async def _call_gate(self, open_gate1: bool) -> bool:
+
+        if not self.gate_client.wait_for_service(timeout_sec=2.0):
+            self.node.get_logger().error(
+                "Gate service is not available"
+            )
+            return False
+
+        request = SetBool.Request()
+        request.data = open_gate1
+
+        future = self.gate_client.call_async(request)
+        result = await future
+
+        return bool(result.success)
+
+    async def _send_yaw(self, angle_rad: float) -> bool:
+
+        if not self.move_yaw_client.wait_for_server(
+            timeout_sec=2.0
+        ):
+            self.node.get_logger().error(
+                "move_yaw server is not available"
+            )
+            return False
+
+        goal_msg = MoveYaw.Goal()
+        goal_msg.target_yaw = angle_rad
+
+        goal_handle = await self.move_yaw_client.send_goal_async(
+            goal_msg
+        )
+
+        if not goal_handle.accepted:
+            self.node.get_logger().error(
+                "move_yaw goal was rejected"
+            )
+            return False
+
+        result = await goal_handle.get_result_async()
+
+        return bool(result.result.success)
+
+    async def _send_x(self, distance_m: float) -> bool:
+
+        if not self.move_x_client.wait_for_server(
+            timeout_sec=2.0
+        ):
+            self.node.get_logger().error(
+                "move_x server is not available"
+            )
+            return False
+
+        goal_msg = MoveX.Goal()
+        goal_msg.target_distance = distance_m
+
+        goal_handle = await self.move_x_client.send_goal_async(
+            goal_msg
+        )
+
+        if not goal_handle.accepted:
+            self.node.get_logger().error(
+                "move_x goal was rejected"
+            )
+            return False
+
+        result = await goal_handle.get_result_async()
+
+        return bool(result.result.success)
