@@ -1,0 +1,30 @@
+running egg_info
+creating ../../build/pid_turtlebot/pid_turtlebot.egg-info
+writing ../../build/pid_turtlebot/pid_turtlebot.egg-info/PKG-INFO
+writing dependency_links to ../../build/pid_turtlebot/pid_turtlebot.egg-info/dependency_links.txt
+writing requirements to ../../build/pid_turtlebot/pid_turtlebot.egg-info/requires.txt
+writing top-level names to ../../build/pid_turtlebot/pid_turtlebot.egg-info/top_level.txt
+writing manifest file '../../build/pid_turtlebot/pid_turtlebot.egg-info/SOURCES.txt'
+reading manifest file '../../build/pid_turtlebot/pid_turtlebot.egg-info/SOURCES.txt'
+writing manifest file '../../build/pid_turtlebot/pid_turtlebot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build
+creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build/lib
+creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build/lib/pid_turtlebot
+copying pid_turtlebot/__init__.py -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build/lib/pid_turtlebot
+running install
+running install_lib
+creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages/pid_turtlebot
+copying /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build/lib/pid_turtlebot/__init__.py -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages/pid_turtlebot
+byte-compiling /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages/pid_turtlebot/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/ament_index
+creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/ament_index/resource_index
+creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/ament_index/resource_index/packages
+copying resource/pid_turtlebot -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/ament_index/resource_index/packages
+copying package.xml -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot
+running install_egg_info
+Copying ../../build/pid_turtlebot/pid_turtlebot.egg-info to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages/pid_turtlebot-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/install.log'
