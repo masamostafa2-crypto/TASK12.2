@@ -20,10 +20,15 @@ setup(
     extras_require={
         'test': [
             'pytest',
+
         ],
     },
     entry_points={
         'console_scripts': [
+            'yaw_pid = pid_turtlebot.yaw_pid:main',
+            'linear_pid = pid_turtlebot.linear_pid:main',
+            'solve_maze = pid_turtlebot.solve_maze:main',
+            'heading_pid = pid_turtlebot.heading_pid:main',
         ],
     },
 )
