@@ -71,6 +71,18 @@ def generate_launch_description():
             'use_sim_time': use_sim_time,
             'gate_service': gate_service,
         }])
+    yaw_client = Node(
+        package='pid_turtlebot',
+        executable='yaw_client',
+        name='yaw_client',
+        output='screen',    
+    parameters=[{'use_sim_time': use_sim_time}])
+    linear_client = Node(
+        package='pid_turtlebot',
+        executable='linear_client',
+        name='linear_client',
+        output='screen',   
+    parameters=[{'use_sim_time': use_sim_time}])
 
     return LaunchDescription([
         declare_use_sim_time,

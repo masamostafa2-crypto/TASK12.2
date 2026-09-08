@@ -29,6 +29,8 @@ setup(
             'linear_pid = pid_turtlebot.linear_pid:main',
             'solve_maze = pid_turtlebot.solve_maze:main',
             'heading_pid = pid_turtlebot.heading_pid:main',
+            'yaw_client = pid_turtlebot.yaw_client:main',
+            'linear_client = pid_turtlebot.linear_client:main',
         ],
     },
 )
