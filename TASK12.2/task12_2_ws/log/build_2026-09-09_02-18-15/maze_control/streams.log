@@ -1,0 +1,34 @@
+[1.124s] Invoking command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/build --no-deps symlink_data
+[1.399s] running develop
+[1.571s] running egg_info
+[1.571s] creating maze_control.egg-info
+[1.588s] writing maze_control.egg-info/PKG-INFO
+[1.588s] writing dependency_links to maze_control.egg-info/dependency_links.txt
+[1.588s] writing entry points to maze_control.egg-info/entry_points.txt
+[1.588s] writing requirements to maze_control.egg-info/requires.txt
+[1.589s] writing top-level names to maze_control.egg-info/top_level.txt
+[1.589s] writing manifest file 'maze_control.egg-info/SOURCES.txt'
+[1.624s] reading manifest file 'maze_control.egg-info/SOURCES.txt'
+[1.624s] writing manifest file 'maze_control.egg-info/SOURCES.txt'
+[1.642s] running build_ext
+[1.642s] Creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/lib/python3.12/site-packages/maze-control.egg-link (link to .)
+[1.642s] Installing maze_timer_node script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/lib/maze_control
+[1.643s] Installing wall_retraction_service script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/lib/maze_control
+[1.643s] 
+[1.643s] Installed /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control
+[1.643s] running symlink_data
+[1.643s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/ament_index
+[1.643s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/ament_index/resource_index
+[1.643s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/ament_index/resource_index/packages
+[1.643s] symbolically linking /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/resource/maze_control -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/ament_index/resource_index/packages
+[1.643s] symbolically linking /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/package.xml -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control
+[1.643s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/launch
+[1.643s] symbolically linking /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/launch/maze_simulation_tb3.launch.py -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/launch
+[1.644s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/worlds
+[1.644s] symbolically linking /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/worlds/maze_world.sdf -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/worlds
+[1.644s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/config
+[1.644s] symbolically linking /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/config/bridge_config.yaml -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/config
+[1.644s] symbolically linking /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/config/gui.config -> /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/config
+[1.644s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/models
+[1.644s] creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/share/maze_control/models/simple_robot
+[1.671s] Invoked command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control/build --no-deps symlink_data

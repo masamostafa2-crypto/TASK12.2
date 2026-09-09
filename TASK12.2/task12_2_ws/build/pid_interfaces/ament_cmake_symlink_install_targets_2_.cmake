@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces/rosidl_generator_py/pid_interfaces/pid_interfaces_s__rosidl_typesupport_c.so" "TARGETS" "pid_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/pid_interfaces")

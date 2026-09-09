@@ -9,10 +9,8 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from std_srvs.srv import SetBool
-
-from turtlebot_interface.action import MoveYaw
-from pid_interfaces.action import yaw_pid
-from pid_interfaces.action import linear_pid
+from pid_interfaces.action import YawPid
+from pid_interfaces.action import LinearPid
 GATE_SERVICE = 'toggle_walls_1_2'
 time_out = 30.0
 
@@ -31,12 +29,10 @@ class SolveMaze(Node):
         self.odom_sub = self.create_subscription(
             Odometry, '/odom', self._odom_callback, 10,
             callback_group=self.callback_group)
-        self.move_yaw_client = ActionClient(
-            self, MoveYaw, 'move_yaw', callback_group=self.callback_group)
-        self.yaw_pid_client = ActionClient(
-            self, yaw_pid, 'target_yaw', callback_group=self.callback_group)
-        self.linear_pid_client = ActionClient(
-            self, linear_pid, 'target_linear', callback_group=self.callback_group)
+        self.YawPid_client = ActionClient(
+            self, YawPid, 'target_yaw', callback_group=self.callback_group)
+        self.LinearPid_client = ActionClient(
+            self, LinearPid, 'target_distance', callback_group=self.callback_group)
 
     def _odom_callback(self, _msg):
         self.odom_seen = True
@@ -95,20 +91,20 @@ class SolveMaze(Node):
 
       
         self.get_logger().info('--- first yaw  ---')
-        pid_goal = yaw_pid.Goal()
-        pid_goal.target_yaw = 1.57
+        pid_goal = YawPid.Goal()
+        pid_goal.target_yaw = 1.64
         if not self.send_goal_and_wait(
-                self.yaw_pid_client, pid_goal, 'first yaw'):
+                self.YawPid_client, pid_goal, 'first yaw'):
             self.get_logger().error('first yaw failed. Aborting.')
             return False
 
 
         self.get_logger().info('--- move forward  ---')
-        pid_goal = linear_pid.Goal()
+        pid_goal = LinearPid.Goal()
         pid_goal.target_distance = 1.25
 
         if not self.send_goal_and_wait(
-            self.linear_pid_client, pid_goal, 'target distance'):
+            self.LinearPid_client, pid_goal, 'target distance'):
             self.get_logger().error('move forward failed. Aborting.')
             return False
 
@@ -120,26 +116,26 @@ class SolveMaze(Node):
             return False
         
         self.get_logger().info('--- move forward  ---')
-        pid_goal = linear_pid.Goal()
-        pid_goal.target_distance = 2.5
+        pid_goal = LinearPid.Goal()
+        pid_goal.target_distance = 1.0
         if not self.send_goal_and_wait(
-            self.linear_pid_client, pid_goal, 'target distance'):
+            self.LinearPid_client, pid_goal, 'target distance'):
             self.get_logger().error('move forward failed. Aborting.')
             return False
 
 
-        self.get_logger().info('--- first yaw  ---')
-        pid_goal = yaw_pid.Goal()
-        pid_goal.target_yaw = -1.57
+        self.get_logger().info('--- 2nd yaw  ---')
+        pid_goal = YawPid.Goal()
+        pid_goal.target_yaw = -0.2
         if not self.send_goal_and_wait(
-            self.yaw_pid_client, pid_goal, 'second yaw'):
+            self.YawPid_client, pid_goal, 'second yaw'):
             self.get_logger().error('second yaw failed. Aborting.')
             return False
         self.get_logger().info('--- move forward  ---')
-        pid_goal = linear_pid.Goal()
-        pid_goal.target_distance = 5
+        pid_goal = LinearPid.Goal()
+        pid_goal.target_distance = 5.0
         if not self.send_goal_and_wait(
-            self.linear_pid_client, pid_goal, 'target distance'):
+            self.LinearPid_client, pid_goal, 'target distance'):
             self.get_logger().error('move forward failed. Aborting.')
             return False
         self.get_logger().info('Maze run complete.')

@@ -1,0 +1,12 @@
+[0.000000] (-) TimerEvent: {}
+[0.000654] (-) JobUnselected: {'identifier': 'maze_control'}
+[0.000873] (-) JobUnselected: {'identifier': 'pid_interfaces'}
+[0.001011] (pid_turtlebot) JobQueued: {'identifier': 'pid_turtlebot', 'dependencies': OrderedDict({'pid_interfaces': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces'})}
+[0.001180] (pid_turtlebot) JobStarted: {'identifier': 'pid_turtlebot'}
+[0.099852] (-) TimerEvent: {}
+[0.200986] (-) TimerEvent: {}
+[0.301859] (-) TimerEvent: {}
+[0.403565] (-) TimerEvent: {}
+[0.509456] (-) TimerEvent: {}
+[0.560811] (pid_turtlebot) JobEnded: {'identifier': 'pid_turtlebot', 'rc': 0}
+[0.572047] (-) EventReactorShutdown: {}

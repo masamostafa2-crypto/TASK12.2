@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from pid_interfaces/action/LinearPid.action
+// generated code does not contain a copyright notice
+
+
+module pid_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: signed distance to drive along the robot's heading, in metres." "\n"
+      "Positive drives forward, negative reverses.")
+    struct LinearPid_Goal {
+      double target_distance;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct LinearPid_Result {
+      boolean success;
+
+      string message;
+
+      double distance_travelled;
+    };
+    @verbatim (language="comment", text=
+      "Feedback: distance covered so far, in metres.")
+    struct LinearPid_Feedback {
+      double current_distance;
+    };
+  };
+};

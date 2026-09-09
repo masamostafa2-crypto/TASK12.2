@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "pid_interfaces/action/LinearPid_Goal",
+      "fields": [
+        {
+          "name": "target_distance",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "pid_interfaces/action/LinearPid_Goal",
+      "hash_string": "RIHS01_103598dd2852aabf56fc0241eb4e8200c6b4f4dc8ff44054c8cf25c19d39dca9"
+    }
+  ]
+}

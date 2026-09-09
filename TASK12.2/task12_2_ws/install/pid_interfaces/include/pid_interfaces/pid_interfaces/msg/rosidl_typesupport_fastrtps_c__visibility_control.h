@@ -1,0 +1,1 @@
+/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces/rosidl_typesupport_fastrtps_c/pid_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
