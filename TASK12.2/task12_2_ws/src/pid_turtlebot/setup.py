@@ -1,3 +1,6 @@
+import os
+from glob import glob
+
 from setuptools import find_packages, setup
 
 package_name = 'pid_turtlebot'
@@ -10,6 +13,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,12 +29,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'yaw_pid = pid_turtlebot.yaw_pid:main',
+            'yaw_pid_server = pid_turtlebot.yaw_pid_server:main',
             'linear_pid = pid_turtlebot.linear_pid:main',
-            'solve_maze = pid_turtlebot.solve_maze:main',
-            'heading_pid = pid_turtlebot.heading_pid:main',
-            'yaw_client = pid_turtlebot.yaw_client:main',
-            'linear_client = pid_turtlebot.linear_client:main',
+            'solve_maze = pid_turtlebot.solve_maze:main'
         ],
     },
 )

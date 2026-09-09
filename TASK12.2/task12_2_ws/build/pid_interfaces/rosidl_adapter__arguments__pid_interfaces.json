@@ -1,0 +1,7 @@
+{
+  "package_name": "pid_interfaces",
+  "non_idl_tuples": [
+    "/home/masa/TASK_12.2/TASK12.2/task12_2_ws/src/pid_interfaces:action/YawPid.action",
+    "/home/masa/TASK_12.2/TASK12.2/task12_2_ws/src/pid_interfaces:action/LinearPid.action"
+  ]
+}

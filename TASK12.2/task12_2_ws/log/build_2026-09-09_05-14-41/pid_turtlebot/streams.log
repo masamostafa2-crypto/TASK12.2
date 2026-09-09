@@ -1,0 +1,19 @@
+[3.481s] Invoking command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build --no-deps symlink_data
+[4.207s] running develop
+[4.689s] running egg_info
+[4.761s] writing pid_turtlebot.egg-info/PKG-INFO
+[4.762s] writing dependency_links to pid_turtlebot.egg-info/dependency_links.txt
+[4.762s] writing entry points to pid_turtlebot.egg-info/entry_points.txt
+[4.763s] writing requirements to pid_turtlebot.egg-info/requires.txt
+[4.763s] writing top-level names to pid_turtlebot.egg-info/top_level.txt
+[4.868s] reading manifest file 'pid_turtlebot.egg-info/SOURCES.txt'
+[4.869s] writing manifest file 'pid_turtlebot.egg-info/SOURCES.txt'
+[4.916s] running build_ext
+[4.916s] Creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages/pid-turtlebot.egg-link (link to .)
+[4.917s] Installing linear_pid script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/pid_turtlebot
+[4.918s] Installing solve_maze script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/pid_turtlebot
+[4.918s] Installing yaw_pid_server script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/pid_turtlebot
+[4.918s] 
+[4.919s] Installed /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot
+[4.919s] running symlink_data
+[4.980s] Invoked command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build --no-deps symlink_data

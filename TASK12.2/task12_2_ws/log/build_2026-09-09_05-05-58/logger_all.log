@@ -1,0 +1,183 @@
+[0.275s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'pid_turtlebot']
+[0.276s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['pid_turtlebot'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70861beae270>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70861bead5b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70861bead5b0>>, mixin_verb=('build',))
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.370s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'ignore_ament_install'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extensions ['colcon_pkg']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'colcon_pkg'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extensions ['colcon_meta']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'colcon_meta'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extensions ['ros']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'ros'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extensions ['cmake', 'python']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'cmake'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'python'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extensions ['python_setup_py']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest) by extension 'python_setup_py'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'ignore'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'ignore_ament_install'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extensions ['colcon_pkg']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'colcon_pkg'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extensions ['colcon_meta']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'colcon_meta'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extensions ['ros']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'ros'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extensions ['cmake', 'python']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'cmake'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'python'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extensions ['python_setup_py']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/assets) by extension 'python_setup_py'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extension 'ignore_ament_install'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extensions ['colcon_pkg']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extension 'colcon_pkg'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extensions ['colcon_meta']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extension 'colcon_meta'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extensions ['ros']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIA26_phase2_ros_contest/maze_control) by extension 'ros'
+[0.486s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIA26_phase2_ros_contest/maze_control' with type 'ros.ament_python' and name 'maze_control'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extension 'ignore'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extension 'ignore_ament_install'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extensions ['colcon_pkg']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extension 'colcon_pkg'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extensions ['colcon_meta']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extension 'colcon_meta'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extensions ['ros']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_interfaces) by extension 'ros'
+[0.491s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pid_interfaces' with type 'ros.ament_cmake' and name 'pid_interfaces'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extension 'ignore'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extension 'ignore_ament_install'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extensions ['colcon_pkg']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extension 'colcon_pkg'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extensions ['colcon_meta']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extension 'colcon_meta'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_turtlebot) by extension 'ros'
+[0.496s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pid_turtlebot' with type 'ros.ament_python' and name 'pid_turtlebot'
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.580s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'maze_control' in 'src/MIA26_phase2_ros_contest/maze_control'
+[0.581s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pid_interfaces' in 'src/pid_interfaces'
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.599s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install
+[0.603s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 440 installed packages in /opt/ros/jazzy
+[0.612s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'cmake_args' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'cmake_target' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'cmake_clean_first' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'cmake_force_configure' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pid_turtlebot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'pid_turtlebot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot', 'merge_install': False, 'path': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/src/pid_turtlebot', 'symlink_install': True, 'test_result_base': None}
+[0.848s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.850s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.851s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/src/pid_turtlebot' with build type 'ament_python'
+[0.851s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_turtlebot', 'ament_prefix_path')
+[0.861s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/hook/ament_prefix_path.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/hook/ament_prefix_path.dsv'
+[0.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/hook/ament_prefix_path.sh'
+[0.872s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.872s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.720s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/src/pid_turtlebot'
+[1.720s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.499s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: clean, extract_messages, upload_docs, egg_info, update_catalog, install_lib, build_scripts, saveopts, setopt, sdist, bdist_wheel, install_scripts, bdist, install_data, check, rotate, install_headers, build_py, install_egg_info, register, bdist_rpm, easy_install, editable_wheel, compile_catalog, init_catalog, bdist_dumb, upload, build_clib, install, alias, test, build_ext, dist_info, build, symlink_data, develop, bdist_egg
+[4.438s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --install-layout, --prefix, --allow-hosts, --no-find-links, --editable, --find-links, --verbose, --no-user-cfg, --site-dirs, --always-copy, --optimize, --zip-ok, --index-url, --record, --uninstall, --multi-version, --upgrade, --local-snapshots-ok, --build-directory, --quiet, --egg-path, --exclude-scripts, --dry-run, --help, --no-deps, --always-unzip, --force-installation-into-system-dir, --version, --install-dir, --user, --script-dir
+[4.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build --no-deps symlink_data
+[5.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_turtlebot', 'pythonpath_develop')
+[5.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/share/pid_turtlebot/hook/pythonpath_develop.ps1'
+[5.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build --no-deps symlink_data
+[5.999s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/share/pid_turtlebot/hook/pythonpath_develop.dsv'
+[5.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/share/pid_turtlebot/hook/pythonpath_develop.sh'
+[6.004s] Level 1:colcon.colcon_core.environment:checking '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot' for CMake module files
+[6.005s] Level 1:colcon.colcon_core.environment:checking '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot' for CMake config files
+[6.006s] Level 1:colcon.colcon_core.environment:checking '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib'
+[6.006s] Level 1:colcon.colcon_core.environment:checking '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/bin'
+[6.007s] Level 1:colcon.colcon_core.environment:checking '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/pkgconfig/pid_turtlebot.pc'
+[6.007s] Level 1:colcon.colcon_core.environment:checking '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages'
+[6.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_turtlebot', 'pythonpath')
+[6.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/hook/pythonpath.ps1'
+[6.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/hook/pythonpath.dsv'
+[6.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/hook/pythonpath.sh'
+[6.010s] Level 1:colcon.colcon_core.environment:checking '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/bin'
+[6.010s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pid_turtlebot)
+[6.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/package.ps1'
+[6.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/package.dsv'
+[6.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/package.sh'
+[6.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/package.bash'
+[6.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/pid_turtlebot/package.zsh'
+[6.019s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/share/colcon-core/packages/pid_turtlebot)
+[6.019s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.020s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.021s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.021s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.038s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.038s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.038s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.063s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.064s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/local_setup.ps1'
+[6.066s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/_local_setup_util_ps1.py'
+[6.069s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/setup.ps1'
+[6.071s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/local_setup.sh'
+[6.072s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/_local_setup_util_sh.py'
+[6.073s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/setup.sh'
+[6.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/local_setup.bash'
+[6.076s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/setup.bash'
+[6.081s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/local_setup.zsh'
+[6.083s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/setup.zsh'

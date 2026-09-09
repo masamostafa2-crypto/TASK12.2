@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pid_interfaces__rs",
+		"source" : "/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces/pid_interfaces__rs"
+	}
+}

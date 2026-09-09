@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.004169] (-) JobUnselected: {'identifier': 'maze_control'}
+[0.006697] (-) JobUnselected: {'identifier': 'pid_interfaces'}
+[0.007842] (pid_turtlebot) JobQueued: {'identifier': 'pid_turtlebot', 'dependencies': OrderedDict({'pid_interfaces': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces'})}
+[0.008118] (pid_turtlebot) JobStarted: {'identifier': 'pid_turtlebot'}
+[0.100878] (-) TimerEvent: {}
+[0.201927] (-) TimerEvent: {}
+[0.302525] (-) TimerEvent: {}
+[0.403408] (-) TimerEvent: {}
+[0.504499] (-) TimerEvent: {}
+[0.605497] (-) TimerEvent: {}
+[0.706281] (-) TimerEvent: {}
+[0.807004] (-) TimerEvent: {}
+[0.909388] (-) TimerEvent: {}
+[1.009927] (-) TimerEvent: {}
+[1.110730] (-) TimerEvent: {}
+[1.211457] (-) TimerEvent: {}
+[1.312404] (-) TimerEvent: {}
+[1.416563] (-) TimerEvent: {}
+[1.517412] (-) TimerEvent: {}
+[1.618324] (-) TimerEvent: {}
+[1.719627] (-) TimerEvent: {}
+[1.820299] (-) TimerEvent: {}
+[1.921083] (-) TimerEvent: {}
+[2.021869] (-) TimerEvent: {}
+[2.123071] (-) TimerEvent: {}
+[2.224036] (-) TimerEvent: {}
+[2.324805] (-) TimerEvent: {}
+[2.425952] (-) TimerEvent: {}
+[2.526656] (-) TimerEvent: {}
+[2.627517] (-) TimerEvent: {}
+[2.728770] (-) TimerEvent: {}
+[2.829639] (-) TimerEvent: {}
+[2.931753] (-) TimerEvent: {}
+[3.032974] (-) TimerEvent: {}
+[3.134253] (-) TimerEvent: {}
+[3.237090] (-) TimerEvent: {}
+[3.337933] (-) TimerEvent: {}
+[3.439007] (-) TimerEvent: {}
+[3.540368] (-) TimerEvent: {}
+[3.642973] (-) TimerEvent: {}
+[3.743465] (-) TimerEvent: {}
+[3.844529] (-) TimerEvent: {}
+[3.945930] (-) TimerEvent: {}
+[4.047426] (-) TimerEvent: {}
+[4.148426] (-) TimerEvent: {}
+[4.249155] (-) TimerEvent: {}
+[4.351129] (-) TimerEvent: {}
+[4.451757] (-) TimerEvent: {}
+[4.552730] (-) TimerEvent: {}
+[4.653743] (-) TimerEvent: {}
+[4.755110] (-) TimerEvent: {}
+[4.856125] (-) TimerEvent: {}
+[4.956967] (-) TimerEvent: {}
+[5.057599] (-) TimerEvent: {}
+[5.158458] (-) TimerEvent: {}
+[5.259274] (-) TimerEvent: {}
+[5.360469] (-) TimerEvent: {}
+[5.461717] (-) TimerEvent: {}
+[5.564350] (-) TimerEvent: {}
+[5.665468] (-) TimerEvent: {}
+[5.766314] (-) TimerEvent: {}
+[5.867310] (-) TimerEvent: {}
+[5.968875] (-) TimerEvent: {}
+[6.072216] (-) TimerEvent: {}
+[6.173218] (-) TimerEvent: {}
+[6.274348] (-) TimerEvent: {}
+[6.375467] (-) TimerEvent: {}
+[6.476284] (-) TimerEvent: {}
+[6.533931] (pid_turtlebot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/build', '--no-deps', 'symlink_data'], 'cwd': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:Invalid dash-separated options,ignore:easy_install,ignore:setup.py', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'masa', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'STM32CubeMX_PATH': '/home/masa/STM32CubeMX', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/masa', 'OLDPWD': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2470', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'masa', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'masa', 'STM32_PRG_PATH': '/home/masa/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/masa-Vostro-15-3510:@/tmp/.ICE-unix/2437,unix/masa-Vostro-15-3510:/tmp/.ICE-unix/2437', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/61227cf2_4aed_4e40_a9eb_ba8662f086cd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.137', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces/lib/python3.12/site-packages:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/maze_control:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages:/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/maze_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.576445] (-) TimerEvent: {}
+[6.677263] (-) TimerEvent: {}
+[6.778054] (-) TimerEvent: {}
+[6.878571] (-) TimerEvent: {}
+[6.979384] (-) TimerEvent: {}
+[7.080579] (-) TimerEvent: {}
+[7.181895] (-) TimerEvent: {}
+[7.283707] (-) TimerEvent: {}
+[7.384985] (-) TimerEvent: {}
+[7.488607] (-) TimerEvent: {}
+[7.589699] (-) TimerEvent: {}
+[7.690482] (-) TimerEvent: {}
+[7.791291] (-) TimerEvent: {}
+[7.892504] (-) TimerEvent: {}
+[7.993320] (-) TimerEvent: {}
+[8.094367] (-) TimerEvent: {}
+[8.195979] (-) TimerEvent: {}
+[8.296900] (-) TimerEvent: {}
+[8.397831] (-) TimerEvent: {}
+[8.480572] (pid_turtlebot) StdoutLine: {'line': b'running develop\n'}
+[8.498426] (-) TimerEvent: {}
+[8.599245] (-) TimerEvent: {}
+[8.700832] (-) TimerEvent: {}
+[8.801769] (-) TimerEvent: {}
+[8.905357] (-) TimerEvent: {}
+[9.006903] (-) TimerEvent: {}
+[9.107801] (-) TimerEvent: {}
+[9.208873] (-) TimerEvent: {}
+[9.310902] (-) TimerEvent: {}
+[9.411777] (-) TimerEvent: {}
+[9.512739] (-) TimerEvent: {}
+[9.613931] (-) TimerEvent: {}
+[9.659293] (pid_turtlebot) StdoutLine: {'line': b'running egg_info\n'}
+[9.714104] (-) TimerEvent: {}
+[9.779592] (pid_turtlebot) StdoutLine: {'line': b'writing pid_turtlebot.egg-info/PKG-INFO\n'}
+[9.780340] (pid_turtlebot) StdoutLine: {'line': b'writing dependency_links to pid_turtlebot.egg-info/dependency_links.txt\n'}
+[9.781417] (pid_turtlebot) StdoutLine: {'line': b'writing entry points to pid_turtlebot.egg-info/entry_points.txt\n'}
+[9.783238] (pid_turtlebot) StdoutLine: {'line': b'writing requirements to pid_turtlebot.egg-info/requires.txt\n'}
+[9.783827] (pid_turtlebot) StdoutLine: {'line': b'writing top-level names to pid_turtlebot.egg-info/top_level.txt\n'}
+[9.814382] (-) TimerEvent: {}
+[9.915255] (-) TimerEvent: {}
+[10.016125] (-) TimerEvent: {}
+[10.019856] (pid_turtlebot) StdoutLine: {'line': b"reading manifest file 'pid_turtlebot.egg-info/SOURCES.txt'\n"}
+[10.027616] (pid_turtlebot) StdoutLine: {'line': b"writing manifest file 'pid_turtlebot.egg-info/SOURCES.txt'\n"}
+[10.118453] (-) TimerEvent: {}
+[10.158176] (pid_turtlebot) StdoutLine: {'line': b'running build_ext\n'}
+[10.159151] (pid_turtlebot) StdoutLine: {'line': b'Creating /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/python3.12/site-packages/pid-turtlebot.egg-link (link to .)\n'}
+[10.162100] (pid_turtlebot) StdoutLine: {'line': b'Installing linear_pid script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/pid_turtlebot\n'}
+[10.164423] (pid_turtlebot) StdoutLine: {'line': b'Installing solve_maze script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/pid_turtlebot\n'}
+[10.164866] (pid_turtlebot) StdoutLine: {'line': b'Installing yaw_pid_server script to /home/masa/TASK_12.2/TASK12.2/task12_2_ws/install/pid_turtlebot/lib/pid_turtlebot\n'}
+[10.165673] (pid_turtlebot) StdoutLine: {'line': b'\n'}
+[10.166296] (pid_turtlebot) StdoutLine: {'line': b'Installed /home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_turtlebot\n'}
+[10.166923] (pid_turtlebot) StdoutLine: {'line': b'running symlink_data\n'}
+[10.218945] (-) TimerEvent: {}
+[10.320634] (-) TimerEvent: {}
+[10.379195] (pid_turtlebot) CommandEnded: {'returncode': 0}
+[10.422049] (-) TimerEvent: {}
+[10.443015] (pid_turtlebot) JobEnded: {'identifier': 'pid_turtlebot', 'rc': 0}
+[10.450885] (-) EventReactorShutdown: {}

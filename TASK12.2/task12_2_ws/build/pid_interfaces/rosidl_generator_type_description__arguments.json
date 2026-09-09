@@ -1,0 +1,14 @@
+{
+  "package_name": "pid_interfaces",
+  "output_dir": "/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces/rosidl_generator_type_description/pid_interfaces",
+  "idl_tuples": [
+    "/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces/rosidl_adapter/pid_interfaces:action/YawPid.idl",
+    "/home/masa/TASK_12.2/TASK12.2/task12_2_ws/build/pid_interfaces/rosidl_adapter/pid_interfaces:action/LinearPid.idl"
+  ],
+  "include_paths": [
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

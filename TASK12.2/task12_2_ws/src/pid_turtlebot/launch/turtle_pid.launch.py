@@ -1,13 +1,3 @@
-"""Launch the maze, both action servers and the solver, in one shot.
-
-The run timer starts when the simulation launches, not when the solver does,
-so everything comes up from a single command:
-
-    ros2 launch pid_turtlebot solve_maze.launch.py
-
-Set launch_simulation:=false to attach the solver to a maze that is already
-running -- useful while debugging a single stage.
-"""
 
 import os
 
@@ -40,14 +30,6 @@ def generate_launch_description():
         default_value='true',
         description='Start the maze too. Set false to attach to a running one.')
 
-    maze_simulation = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(
-                get_package_share_directory('maze_control'),
-                'launch',
-                'maze_simulation_tb3.launch.py')),
-        condition=IfCondition(launch_simulation))
-
     linear_pid = Node(
         package='pid_turtlebot',
         executable='linear_pid',
@@ -55,10 +37,10 @@ def generate_launch_description():
         output='screen',
         parameters=[{'use_sim_time': use_sim_time}])
 
-    yaw_pid = Node(
+    yaw_pid_server = Node(
         package='pid_turtlebot',
-        executable='yaw_pid',
-        name='yaw_pid',
+        executable='yaw_pid_server',
+        name='yaw_pid_server',
         output='screen',
         parameters=[{'use_sim_time': use_sim_time}])
 
@@ -71,25 +53,13 @@ def generate_launch_description():
             'use_sim_time': use_sim_time,
             'gate_service': gate_service,
         }])
-    yaw_client = Node(
-        package='pid_turtlebot',
-        executable='yaw_client',
-        name='yaw_client',
-        output='screen',    
-    parameters=[{'use_sim_time': use_sim_time}])
-    linear_client = Node(
-        package='pid_turtlebot',
-        executable='linear_client',
-        name='linear_client',
-        output='screen',   
-    parameters=[{'use_sim_time': use_sim_time}])
-
+  
+   
     return LaunchDescription([
         declare_use_sim_time,
         declare_gate_service,
         declare_launch_simulation,
-        maze_simulation,
         linear_pid,
-        yaw_pid,
+        yaw_pid_server,
         solve_maze,
     ])

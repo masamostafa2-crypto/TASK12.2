@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from pid_interfaces/action/YawPid.action
+// generated code does not contain a copyright notice
+
+
+module pid_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: signed angle to rotate, in RADIANS. Positive turns left (CCW).")
+    struct YawPid_Goal {
+      double target_yaw;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct YawPid_Result {
+      boolean success;
+
+      string message;
+
+      double angle_turned;
+    };
+    @verbatim (language="comment", text=
+      "Feedback: angle turned so far, in radians.")
+    struct YawPid_Feedback {
+      double current_yaw;
+    };
+  };
+};
